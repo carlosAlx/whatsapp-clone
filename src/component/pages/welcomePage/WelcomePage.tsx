@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import WelcomeArt from "../../../../assets/svg/welcome_page_art.svg";
+import TextLogo from "../../../baseui/TextLogo/TextLogo";
 
 const WelcomePage = () => {
   return (
@@ -20,6 +21,7 @@ const WelcomePage = () => {
       <Pressable onPress={() => {}} style={styles.buttonStyle}>
         <Text style={styles.textButtonStyle}>agree and continue</Text>
       </Pressable>
+      <TextLogo />
     </View>
   );
 };
@@ -58,6 +60,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     padding: 10,
     textTransform: "uppercase",
-    textAlign: "center"
+    textAlign: "center",
   },
 });
