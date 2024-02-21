@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
   root: {
     display: "flex",
     alignItems: "center",
-    paddingTop: 10,
     gap: 3,
   },
   textStyle1: {

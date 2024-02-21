@@ -6,8 +6,9 @@ import WelcomePage from "./src/component/pages/welcomePage/WelcomePage";
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <LoadingPage /> */}
-      <WelcomePage />
+      {/* <LoadingPage />    <WelcomePage /> */}
+      <LoadingPage /> 
+  
       <StatusBar style="auto" />
     </View>
   );
