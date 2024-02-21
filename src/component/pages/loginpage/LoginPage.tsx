@@ -9,7 +9,7 @@ import {
 import React from "react";
 import DropDown from "../../../../assets/svg/dropdown.svg";
 
-const LoginPage = ({ navigation }: { navigation: any }) => {
+const LoginPage = ({ navigation }: any) => {
   return (
     <SafeAreaView style={styles.root}>
       <View style={styles.contentStyle}>
@@ -38,7 +38,7 @@ const LoginPage = ({ navigation }: { navigation: any }) => {
       </View>
       <Pressable
         onPress={() => {
-          navigation.navigate("otp_page");
+          navigation.navigate("otpPage");
         }}
         style={styles.buttonStyle}
       >
@@ -56,8 +56,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   contentStyle: {
-    paddingTop: 40,
-    paddingHorizontal: 90,
+    width: "80%",
     display: "flex",
     gap: 15,
   },

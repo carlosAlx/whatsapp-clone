@@ -2,7 +2,6 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import WelcomeArt from "../../../../assets/svg/welcome_page_art.svg";
 import TextLogo from "../../../baseui/TextLogo/TextLogo";
-import { useNavigation } from "@react-navigation/native";
 
 const WelcomePage = ({ navigation }: any) => {
   return (
