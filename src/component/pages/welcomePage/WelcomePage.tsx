@@ -2,14 +2,15 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import WelcomeArt from "../../../../assets/svg/welcome_page_art.svg";
 import TextLogo from "../../../baseui/TextLogo/TextLogo";
+import { useNavigation } from "@react-navigation/native";
 
-const WelcomePage = () => {
+const WelcomePage = ({ navigation }: any) => {
   return (
     <View style={styles.root}>
       <Text style={styles.titleStyle}>Welcome to WhatsApp</Text>
       <WelcomeArt />
       <Text style={styles.descTextStyle}>
-        Read our{" "}
+        Read our
         <Text style={styles.linkPrivacy} onPress={() => {}}>
           Privacy Policy.
         </Text>
@@ -18,7 +19,12 @@ const WelcomePage = () => {
           Teams of Service.
         </Text>
       </Text>
-      <Pressable onPress={() => {}} style={styles.buttonStyle}>
+      <Pressable
+        onPress={() => {
+          navigation.navigate("loginPage");
+        }}
+        style={styles.buttonStyle}
+      >
         <Text style={styles.textButtonStyle}>agree and continue</Text>
       </Pressable>
       <TextLogo />
