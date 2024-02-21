@@ -1,12 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import LoadingPage from './src/component/pages/loadingpage/LoadingPage';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import LoadingPage from "./src/component/pages/loadingpage/LoadingPage";
+import WelcomePage from "./src/component/pages/welcomePage/WelcomePage";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <LoadingPage />
+      {/* <LoadingPage /> */}
+      <WelcomePage />
       <StatusBar style="auto" />
     </View>
   );
@@ -15,8 +16,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
