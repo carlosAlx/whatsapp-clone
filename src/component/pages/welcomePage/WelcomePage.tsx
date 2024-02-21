@@ -11,11 +11,11 @@ const WelcomePage = ({ navigation }: any) => {
       <WelcomeArt />
       <Text style={styles.descTextStyle}>
         Read our
-        <Text style={styles.linkPrivacy} onPress={() => {}}>
+        <Text style={styles.linkStyle} onPress={() => {}}>
           Privacy Policy.
         </Text>
         Tap "Agree and continue" to accept the{" "}
-        <Text style={styles.linkPrivacy} onPress={() => {}}>
+        <Text style={styles.linkStyle} onPress={() => {}}>
           Teams of Service.
         </Text>
       </Text>
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     textAlign: "center",
   },
-  linkPrivacy: {
+  linkStyle: {
     color: "#4715FF",
   },
   buttonStyle: {
